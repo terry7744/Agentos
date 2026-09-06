@@ -1,0 +1,20 @@
+name = "le-serveur"
+type = "service"
+main = "src/index.js"
+compatibility_date = "2024-01-15"
+account_id = "twilight-cake-cab3"
+
+[env.production]
+routes = [{ pattern = "serveur.samymiout239.workers.dev", zone_name = "samymiout239.workers.dev" }]
+
+[env.production.vars]
+STRIPE_CURRENCY = "EUR"
+PRICE_AMOUNT = 999
+SERVICE_NAME = "Le Serveur"
+CONTACT_EMAIL = "salumy0703@proton.me"
+
+[[env.production.secrets]]
+name = "STRIPE_SECRET_KEY"
+
+[build]
+command = "npm install"

@@ -1,0 +1,1 @@
+{"name":"le-serveur","version":"1.0.0","description":"Le Serveur - Event Service (9.99€)","main":"src/index.js","type":"module","scripts":{"dev":"wrangler dev","deploy":"wrangler deploy"},"dependencies":{"stripe":"^13.0.0"},"devDependencies":{"wrangler":"^3.0.0"}}
